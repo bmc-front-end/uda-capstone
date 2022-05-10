@@ -1,0 +1,84 @@
+@use 'base';
+
+/* LAYOUT */
+html {
+    font-size: base.$font-size;
+}
+
+body {
+    background-image: linear-gradient(160deg, #80d0c7, #0093e9);
+    min-height: 100vh;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    justify-content: center;
+    font-family: base.$font-stack;
+    margin-inline: auto;
+    padding-block: 1rem;
+}
+
+#trip_search {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+#trip_search,
+#trip_search_result {
+    margin: 1rem
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 1rem
+}
+
+.logo {
+    width: 225px
+}
+
+header,
+main {
+    align-items: center
+}
+
+main {
+    grid-area: main;
+    min-height: 0;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: base.$font-size;
+    color: #000;
+}
+
+.footer {
+    font-size: 15px;
+    color: #1e4150;
+
+    a {
+        color: black;
+    }
+
+    li {
+        display: inline;
+    }
+}
+
+@media(min-width:600px) {
+    main {
+        align-items: center
+    }
+}
