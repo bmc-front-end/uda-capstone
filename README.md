@@ -7,7 +7,7 @@ The project includes a simple form where you enter the location you are travelin
 
 3 API's are used in this app to get the relevant data to be displayed on the page.
 
-- [Geonames]("http://www.geonames.org/export/web-services.html")
+- [Geonames](http://www.geonames.org/export/web-services.html)
 - [Weatherbit](https://www.weatherbit.io/account/create)
 - [Pixabay](https://pixabay.com/api/docs/)
 
